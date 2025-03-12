@@ -1,0 +1,84 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box; background-color: #dce1e7; color: #191919;
+   
+}
+@font-face {
+    font-family: mont;
+    src: url(Mainstay.otf);
+}
+@font-face {
+    font-family: sun;
+    src:url(Sunflare.ttf);
+}
+@font-face {
+    font-family: mod;
+    src:url(ModernPrestigeDEMO.otf);
+}
+@font-face {
+    font-family: juni;
+    src:url(JunigardenSwash_PERSONAL_USE_ONLY.otf);
+}
+nav{
+    height: 3.4vw; width: 98.5vw;display: flex;
+    justify-content: space-between; font-family: mont;
+}
+.nav-logo{
+    height: 100%; width: 15%;  display: flex; align-items: center;
+    justify-content: flex-end; padding-right: 2.5vw; 
+}
+.nav-list{
+    height: 100%; width: 40%;font-family: sun;
+    display: flex; justify-content: space-evenly; align-items: center;
+    font-size: 1.5vw; 
+}
+.nav-icons{
+    height: 100%; width: 15%; display: flex;
+    font-size: 1.3vw; font-weight: 700; gap: 3vw; align-items: center; justify-content: center;
+}
+.txt{
+    height: 14.4vw; width: 100%; 
+    font-family: sun; display: flex; flex-direction: column; align-items: center; justify-content: end;
+}
+.txt>p:nth-child(1){
+    font-size: 4vw; font-family: mod;
+}
+.txt>p:nth-child(2){
+    font-size: 6vw; font-family: juni;
+}
+.imgs{
+    height: 20vw; width: 100%; display: flex; position: relative;
+    align-items: center; justify-content: center; overflow: hidden;
+}
+.imgs>img{
+    height: 80%; width: 14vw; object-fit: cover; border-radius: 10px;  position: absolute;
+}
+.imgs>img:nth-child(1){
+    left: 7.5vw; top: 3.5vw;z-index: 99; transform: rotate(-5deg); 
+}
+.imgs>img:nth-child(2){
+    left: 20.5vw; top: 1.2vw;z-index: 97; transform: rotate(-6deg);
+}
+.imgs>img:nth-child(3){
+    left: 34vw; top: 2.2vw; transform: rotate(-5deg);z-index: 96;
+}
+.imgs>img:nth-child(4){
+    left: 47vw; top: .4vw; transform: rotate(-1deg); z-index: 95;
+}
+.imgs>img:nth-child(5){
+    left: 60vw; transform: rotate(4deg); z-index: 94;
+}
+.imgs>img:nth-child(6){
+    left: 73vw; top: 1.5vw;transform: rotate(6deg);
+}
+.footer{
+height: 17vh; width: 100%;display: flex; flex-direction: column;
+align-items: center; justify-content: center; gap: 1vw; overflow: hidden;
+}
+.footer>p{
+  font-weight: 400; font-family: sun;
+  font-size: 1.2vw;
+}
+button{
+    border: none; background-color: none; background-color: #191919; color: #dce1e7;
+    padding: .9vw 1.2vw; border-radius: 10px; font-family: mod; font-size: 1.2vw;
+}
