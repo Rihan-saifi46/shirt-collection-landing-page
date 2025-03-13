@@ -1,6 +1,6 @@
 *{
     padding: 0; margin: 0; box-sizing: border-box; background-color: #dce1e7; color: #191919;
-   
+    flex-wrap: wrap;  
 }
 @font-face {
     font-family: mont;
@@ -18,8 +18,12 @@
     font-family: juni;
     src:url(JunigardenSwash_PERSONAL_USE_ONLY.otf);
 }
+.container{
+    height: 100vh; width: 100vw;  
+    z-index: 999; flex-wrap: wrap;
+}
 nav{
-    height: 3.4vw; width: 98.5vw;display: flex;
+    height: 3.4vw; width: 98.5vw;display: flex;flex-wrap: wrap;
     justify-content: space-between; font-family: mont;
 }
 .nav-logo{
@@ -35,8 +39,23 @@ nav{
     height: 100%; width: 15%; display: flex;
     font-size: 1.3vw; font-weight: 700; gap: 3vw; align-items: center; justify-content: center;
 }
+@media (max-width:300px){
+    nav{
+        height: 25vw; width: 100%; 
+        display: flex; justify-content: center;
+    }
+    .nav-logo{
+        font-size: 4vw; width: 100%; display: flex; justify-content: center;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-icons{
+        display: none;
+    }
+}
 .txt{
-    height: 14.4vw; width: 100%; 
+    height: 14.4vw; width: 100%; flex-wrap: wrap;
     font-family: sun; display: flex; flex-direction: column; align-items: center; justify-content: end;
 }
 .txt>p:nth-child(1){
@@ -45,8 +64,20 @@ nav{
 .txt>p:nth-child(2){
     font-size: 6vw; font-family: juni;
 }
+@media (max-width:300px){
+    .txt{
+        display: flex; height: 40vw; flex-direction: column; 
+        justify-content: center;
+    }
+    .txt>p:nth-child(1){
+        font-size: 12vw;
+    }
+    .txt>p:nth-child(2){
+        font-size: 17vw;
+    }
+}
 .imgs{
-    height: 20vw; width: 100%; display: flex; position: relative;
+    height: 20vw; width: 100%; display: flex; position: relative;flex-wrap: wrap;
     align-items: center; justify-content: center; overflow: hidden;
 }
 .imgs>img{
@@ -70,8 +101,16 @@ nav{
 .imgs>img:nth-child(6){
     left: 73vw; top: 1.5vw;transform: rotate(6deg);
 }
+@media (max-width:300px){
+     .imgs{
+        height: 59vw; width: 100%;display: flex; align-items: center;
+     }
+     .imgs>img{
+        height: 81%; width: 14.5vw; object-fit: cover; border-radius: 10px;  position: absolute;
+    }
+}
 .footer{
-height: 17vh; width: 100%;display: flex; flex-direction: column;
+height: 17vh; width: 100%;display: flex; flex-direction: column;flex-wrap: wrap;
 align-items: center; justify-content: center; gap: 1vw; overflow: hidden;
 }
 .footer>p{
@@ -80,5 +119,18 @@ align-items: center; justify-content: center; gap: 1vw; overflow: hidden;
 }
 button{
     border: none; background-color: none; background-color: #191919; color: #dce1e7;
-    padding: .9vw 1.2vw; border-radius: 10px; font-family: mod; font-size: 1.2vw;
+    padding: .9vw 1.2vw; border-radius: 10px; font-family: mod; font-size: 1.2vw; 
+}
+@media (max-width:300px){
+    .footer{
+       height: 34vw; width: 100%;  display: flex; 
+       flex-direction: column ; gap: 3vw;
+    }
+    .footer>p{
+        font-size: 4vw; width: 62%;
+    }
+   button{
+    height: 10vw; width: 29vw; font-size: 4vw; display: flex; justify-content: center; align-items: center;
+    border: none;  
+   }
 }

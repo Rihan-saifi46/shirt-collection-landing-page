@@ -16,10 +16,6 @@ Shery.mouseFollower({
     duration: 1,
   });
 let tl = gsap.timeline();
-
-tl.from('.container',{
-    height:0,
-})
 tl.from(".nav-logo",{
     y:100,scale:0
 })
