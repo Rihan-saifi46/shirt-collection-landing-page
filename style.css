@@ -54,6 +54,21 @@ nav{
         display: none;
     }
 }
+@media (max-width:800px){
+    nav{
+        height: 25vw; width: 100%; 
+        display: flex; justify-content: center;
+    }
+    .nav-logo{
+        font-size: 4vw; width: 100%; display: flex; justify-content: center;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-icons{
+        display: none;
+    }
+}
 .txt{
     height: 14.4vw; width: 100%; flex-wrap: wrap;
     font-family: sun; display: flex; flex-direction: column; align-items: center; justify-content: end;
@@ -65,6 +80,18 @@ nav{
     font-size: 6vw; font-family: juni;
 }
 @media (max-width:600px){
+    .txt{
+        display: flex; height: 40vw; flex-direction: column; 
+        justify-content: center;
+    }
+    .txt>p:nth-child(1){
+        font-size: 12vw;
+    }
+    .txt>p:nth-child(2){
+        font-size: 17vw;
+    }
+}
+@media (max-width:800px){
     .txt{
         display: flex; height: 40vw; flex-direction: column; 
         justify-content: center;
@@ -109,6 +136,14 @@ nav{
         height: 81%; width: 14.5vw; object-fit: cover; border-radius: 10px;  position: absolute;
     }
 }
+@media (max-width:800px){
+     .imgs{
+        height: 59vw; width: 100%;display: flex; align-items: center;
+     }
+     .imgs>img{
+        height: 81%; width: 14.5vw; object-fit: cover; border-radius: 10px;  position: absolute;
+    }
+}
 .footer{
 height: 17vh; width: 100%;display: flex; flex-direction: column;flex-wrap: wrap;
 align-items: center; justify-content: center; gap: 1vw; overflow: hidden;
@@ -122,6 +157,19 @@ button{
     padding: .9vw 1.2vw; border-radius: 10px; font-family: mod; font-size: 1.2vw; 
 }
 @media (max-width:600px){
+    .footer{
+       height: 34vw; width: 100%;  display: flex; 
+       flex-direction: column ; gap: 3vw;
+    }
+    .footer>p{
+        font-size: 4vw; width: 62%;
+    }
+   button{
+    height: 10vw; width: 29vw; font-size: 4vw; display: flex; justify-content: center; align-items: center;
+    border: none;  
+   }
+}
+@media (max-width:800px){
     .footer{
        height: 34vw; width: 100%;  display: flex; 
        flex-direction: column ; gap: 3vw;
